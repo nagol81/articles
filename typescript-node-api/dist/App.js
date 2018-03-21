@@ -2,6 +2,7 @@
 const express = require('express');
 const logger = require('morgan');
 const bodyParser = require('body-parser');
+const HeroRouter_1 = require('./routes/HeroRouter');
 class App {
     constructor() {
         this.express = express();
@@ -15,13 +16,13 @@ class App {
     }
     routes() {
         let router = express.Router();
-        console.log(`Listening on `);
         router.get('/', (req, res, next) => {
             res.json({
                 message: 'Hello World'
             });
         });
         this.express.use('/', router);
+        this.express.use('/api/v1/heroes', HeroRouter_1.default);
     }
 }
 Object.defineProperty(exports, "__esModule", { value: true });
