@@ -1,0 +1,3 @@
+https://closebrace.com/tutorials/2017-03-02/the-dead-simple-step-by-step-guide-for-front-end-developers-to-getting-up-and-running-with-nodejs-express-and-mongodb
+"C:\Program Files\MongoDB\Server\3.6\bin\mongod.exe" --dbpath c:\node\nodetest1\data\
+"C:\Program Files\MongoDB\Server\3.6\bin\mongo.exe"
